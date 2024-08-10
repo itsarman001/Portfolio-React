@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import Bio from "./Bio";
 import Education from "./Education";
 import Skills from "./Skills";
+import WorkExperience from "./WorkExperience";
 
 export {
     Navbar,
@@ -11,5 +12,6 @@ export {
     Projects,
     Bio,
     Education,
-    Skills
+    Skills,
+    WorkExperience
 }
