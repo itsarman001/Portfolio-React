@@ -5,6 +5,8 @@ import Bio from "./Bio";
 import Education from "./Education";
 import Skills from "./Skills";
 import WorkExperience from "./WorkExperience";
+import ContactForm from "./ContactForm";
+import Footer from "./Footer";
 
 export {
     Navbar,
@@ -13,5 +15,7 @@ export {
     Bio,
     Education,
     Skills,
-    WorkExperience
+    WorkExperience,
+    ContactForm,
+    Footer
 }

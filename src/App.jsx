@@ -1,5 +1,15 @@
 import React from "react";
-import {Hero, Navbar, Projects, Bio, Education, Skills, WorkExperience} from "./components";
+import {
+  Hero,
+  Navbar,
+  Projects,
+  Bio,
+  Education,
+  Skills,
+  WorkExperience,
+  ContactForm,
+  Footer,
+} from "./components";
 
 function App() {
   return (
@@ -13,6 +23,8 @@ function App() {
         <Bio />
         <WorkExperience />
         <Education />
+        <ContactForm />
+        <Footer />
       </div>
     </div>
   );
