@@ -1,7 +1,5 @@
 import React from "react";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Projects from './components/Projects';
+import {Hero, Navbar, Projects, Bio} from "./components";
 
 function App() {
   return (
@@ -11,6 +9,7 @@ function App() {
         <Hero />
         <Navbar />
         <Projects />
+        <Bio />
       </div>
     </div>
   );
