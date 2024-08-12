@@ -45,10 +45,11 @@ function ContactForm() {
       setIsSending(true);
       emailjs
         .send(
-          "service_n9vicia",
-          "service_n9vicia",
+          "Service_Id",
+          "Template_Id",
           formData,
-          "d0LNZbpYxc8BoU7jb"
+          "Public_Key"
+          /* Use your service id, template id and public key here */
         )
         .then((response) => {
           toast.success("Message Sent Successfully");
