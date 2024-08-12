@@ -35,30 +35,35 @@ function ContactForm() {
     return errors;
   };
 
-  // Validation Not Working
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const validateErrors = validate();
-    if (Object.keys(validateErrors).length > 0) setErrors(validateErrors);
-    setErrors({});
-    setIsSending(true);
 
-    emailjs
-      .send("Service_Id", "Template_Id", formData, "Public_Key")
-      .then((response) => {
-        toast.success("Message Sent Successfully");
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-      })
-      .catch((error) => {
-        console.log("Failed: " + error);
-        toast.error("Failed to send message, Please try agian");
-      })
-      .finally(() => setIsSending(false));
+    if (Object.keys(validateErrors).length > 0) {
+      setErrors(validateErrors);
+    } else {
+      setIsSending(true);
+      emailjs
+        .send(
+          "service_n9vicia",
+          "service_n9vicia",
+          formData,
+          "d0LNZbpYxc8BoU7jb"
+        )
+        .then((response) => {
+          toast.success("Message Sent Successfully");
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        })
+        .catch((error) => {
+          console.log("Failed: " + error);
+          toast.error("Failed to send message, Please try agian");
+        })
+        .finally(() => setIsSending(false));
+    }
   };
 
   return (
